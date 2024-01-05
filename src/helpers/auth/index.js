@@ -3,7 +3,8 @@ import { db } from "../../firebase.js";
 
 const createUserData = async (id) => {
   const user = {
-    wishlists: [],
+    wishlist: [],
+    isCreatingWishlist: 0,
   };
 
   const docRef = doc(db, "users", id.toString());
